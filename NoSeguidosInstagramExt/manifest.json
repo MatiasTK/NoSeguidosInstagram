@@ -1,0 +1,22 @@
+{
+  "name": "InstagramNoSeguidos",
+  "version": "1.0.0",
+  "description": "Revisa si la persona te sigue devuelta en Instagram.",
+  "manifest_version": 3,
+  "author": "MatiasTK",
+  "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_title": "InstagramNoSeguidos"
+  },
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "host_permissions": ["https://www.instagram.com/*"],
+  "background": {
+    "service_worker": "background.js",
+    "persistent": false
+  }
+}
